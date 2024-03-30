@@ -32,10 +32,10 @@ students_no = ["John", "Venessa"]
 
 # dict comprehensions
 
-dictionary= {'a': 1,
-             'b': 2,
-             'c': 3,
-             'd': 4}
+dictionary= {'a' : 1,
+             'b' : 2,
+             'c' : 3,
+             'd' : 4}
 
 dictionary.keys()
 dictionary.values()
@@ -43,3 +43,18 @@ dictionary.items()
 
 {k : v ** 2 for (k, v) in dictionary.items()}
 {k.upper() : v ** 2 for (k, v) in dictionary.items()}
+
+numbers = range(10)
+new_dict = {}
+
+# complex way
+for n in numbers:
+    if n % 2 == 0:
+        new_dict[n] = n ** 2
+
+# simple way
+        
+{n : n ** 2 for n in numbers if n % 2 == 0}
+        
+
+

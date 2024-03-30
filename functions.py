@@ -71,4 +71,5 @@ def add_element(a, b):
     print(list_store)
 
 add_element(1, 9)
-print(c)
+#print(c) this doesn't work because c is a local variable
+
